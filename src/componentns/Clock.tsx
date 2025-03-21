@@ -21,9 +21,7 @@ export class Clock extends React.Component<Props, State> {
 
   startTimer = () => {
     this.timerId = window.setInterval(() => {
-      const currentTime = getCurrentTime();
-
-      this.setState({ time: currentTime });
+      this.setState({ time: getCurrentTime() });
     }, 1000);
   };
 
